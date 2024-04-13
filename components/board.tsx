@@ -1,4 +1,5 @@
 import styles from "@/styles/board.module.css";
+import Tile from "./tile";
 
 function Board() {
   const renderGrid = () => {
@@ -12,6 +13,9 @@ function Board() {
   };
   return (
     <div className={`${styles.board}`}>
+      <div className={styles.tile}>
+        <Tile />
+      </div>
       <div className={styles.grid}>{renderGrid()}</div>
     </div>
   );

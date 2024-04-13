@@ -1,5 +1,6 @@
 .board {
   width: calc((var(--pixel-size) * 8 * 4) + (var(--pixel-size) * 6));
+  margin: 10% auto;
 }
 
 .grid {
@@ -8,7 +9,6 @@
   border-radius: calc(var(--pixel-size) * 0.75);
   background: var(--secondary-background);
   border: var(--pixel-size) solid var(--secondary-background);
-  
 }
 
 .cell {
@@ -17,4 +17,14 @@
   margin: calc(var(--pixel-size) * 0.5);
   border-radius: calc(var(--pixel-size) * 0.5);
   background: var(--cell-background);
+}
+
+.tile {
+  position: absolute;
+  z-index: 2;
+  margin: calc(var(--pixel-size));
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
 }
